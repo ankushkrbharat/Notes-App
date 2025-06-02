@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Notes App</title>
+</head>
+
+<body>
+    <section class="w-full min-h-screen flex flex-col items-center bg-gray-50">
+        <div class="flex flex-col items-center font-[poppins] w-full max-w-[600px] gap-5 p-5">
+            <h1 class="text-5xl font-bold">Notes</h1>
+            <div class="flex gap-3 w-full">
+                <input type="text" id="name" placeholder="Note title"
+                    class="border-2 w-full border-gray-400/15 focus:outline-none p-2 rounded-lg">
+                <button id="add" class="bg-black text-white py-2 px-5 rounded-lg hover:bg-gray-800">Add</button>
+            </div>
+        </div>
+
+        <div class="border-b border-gray-400/30 mt-4 w-full"></div>
+
+        <div id="notes-container" class="flex flex-col items-center justify-center p-4 gap-5 w-full max-w-[600px]">
+            
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
